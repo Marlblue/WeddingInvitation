@@ -40,8 +40,6 @@ function CountdownBox({ value, label }: CountdownBoxProps) {
         >
           {String(value).padStart(2, "0")}
         </span>
-        {/* Middle line effect */}
-        <div className="absolute inset-x-0 top-1/2 h-px bg-terracotta/10" />
       </div>
       <span className="text-charcoal/70 text-[10px] md:text-xs tracking-[0.15em] uppercase font-sans">
         {label}

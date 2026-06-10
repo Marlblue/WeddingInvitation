@@ -54,7 +54,7 @@ export default function MusicPlayer({ isPlaying, onToggle }: MusicPlayerProps) {
       onClick={onToggle}
       className={`fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-colors border ${
         isPlaying
-          ? "bg-terracotta text-white border-terracotta shadow-terracotta/30 animate-spin-slow"
+          ? "bg-terracotta text-white border-terracotta shadow-terracotta/30"
           : "bg-white/80 text-charcoal border-white/40 backdrop-blur-sm"
       }`}
       aria-label={isPlaying ? "Pause music" : "Play music"}

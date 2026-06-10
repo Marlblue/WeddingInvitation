@@ -34,10 +34,6 @@ export default function WeddingApp() {
   const handleOpen = () => {
     setIsOpen(true);
     setIsPlaying(true);
-    // Smooth scroll to the next section after opening
-    setTimeout(() => {
-      document.getElementById("ayat")?.scrollIntoView({ behavior: "smooth" });
-    }, 500);
   };
 
   const toggleMusic = () => {
@@ -59,10 +55,21 @@ export default function WeddingApp() {
   return (
     <main className="min-h-screen bg-cream selection:bg-terracotta-light selection:text-charcoal relative overflow-x-hidden">
       {/* 
-        Hero Section always visible initially.
-        When opened, it acts as the top section of the page.
+        Hero Section acts as the cover.
+        When opened, it slides up and disappears.
       */}
-      <HeroSection guestName={guestName} onOpen={handleOpen} />
+      <AnimatePresence>
+        {!isOpen && (
+          <motion.div
+            key="cover"
+            exit={{ y: "-100vh", opacity: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="fixed inset-0 z-50"
+          >
+            <HeroSection guestName={guestName} onOpen={handleOpen} />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Background Texture & Birds */}
       <AnimatePresence>
@@ -73,9 +80,9 @@ export default function WeddingApp() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
             className="relative z-20"
           >
             <AyatSection />
