@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #FDFBF9;
+  --ivory: #FAF8F5;
+  --terracotta: #B3543D;
+  --terracotta-light: #D47B65;
+  --terracotta-dark: #8C3E2B;
+  --champagne: #F2EBE5;
+  --charcoal: #2D2D2D;
+  --sage: #7A8B76;
+  --warm-white: #FFFFFF;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-ivory: var(--ivory);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-light: var(--terracotta-light);
+  --color-terracotta-dark: var(--terracotta-dark);
+  --color-champagne: var(--champagne);
+  --color-charcoal: var(--charcoal);
+  --color-sage: var(--sage);
+  --color-warm-white: var(--warm-white);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--terracotta-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terracotta);
+}
+
+/* Selection color */
+::selection {
+  background: var(--terracotta-light);
+  color: var(--warm-white);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(201, 169, 110, 0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* Ornamental divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(253, 251, 249, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 123, 101, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+/* Terracotta gradient text */
+.terracotta-text {
+  background: linear-gradient(135deg, var(--terracotta-dark), var(--terracotta), var(--terracotta-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section styling */
+.section-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    max-width: 768px;
+    padding: 80px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    max-width: 900px;
+  }
+}
+
+/* Flip clock numbers */
+.flip-number {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
