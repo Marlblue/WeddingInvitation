@@ -57,7 +57,7 @@ export default function WeddingApp() {
   }, [isOpen]);
 
   return (
-    <main className="min-h-screen bg-cream selection:bg-terracotta-light selection:text-charcoal relative">
+    <main className="min-h-screen bg-cream selection:bg-terracotta-light selection:text-charcoal relative overflow-x-hidden">
       {/* 
         Hero Section always visible initially.
         When opened, it acts as the top section of the page.

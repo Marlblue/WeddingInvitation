@@ -17,7 +17,7 @@ function Profile({ name, fullName, parentInfo, image, instagram, delay }: Profil
   return (
     <AnimateOnScroll animation="slideUp" delay={delay} className="flex flex-col items-center text-center">
       {/* Photo with arch shape */}
-      <div className="relative mb-6">
+      <div className="relative mb-6 overflow-hidden">
         <div className="w-48 h-64 md:w-56 md:h-72 rounded-t-[100px] rounded-b-2xl overflow-hidden shadow-lg border-2 border-white">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

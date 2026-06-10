@@ -29,6 +29,7 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
   color: var(--charcoal);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  /* removed width and max-width to fix horizontal scroll on mobile */
 }
 
 /* Custom Scrollbar */

@@ -22,11 +22,11 @@ const variants = {
     visible: { opacity: 1, y: 0 },
   },
   slideLeft: {
-    hidden: { opacity: 0, x: 60 },
+    hidden: { opacity: 0, x: 30 },
     visible: { opacity: 1, x: 0 },
   },
   slideRight: {
-    hidden: { opacity: 0, x: -60 },
+    hidden: { opacity: 0, x: -30 },
     visible: { opacity: 1, x: 0 },
   },
   scaleIn: {

@@ -27,7 +27,7 @@ export default function GallerySection() {
 
   return (
     <section id="gallery" className="bg-transparent py-16 md:py-20">
-      <div className="section-container max-w-4xl">
+      <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
             className="text-center text-2xl md:text-3xl text-charcoal mb-2"
