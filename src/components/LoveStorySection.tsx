@@ -37,7 +37,7 @@ const milestones = [
 
 export default function LoveStorySection() {
   return (
-    <section id="love-story" className="bg-transparent py-16 md:py-20">
+    <section id="love-story" className="bg-transparent py-10 md:py-20">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
@@ -46,13 +46,13 @@ export default function LoveStorySection() {
           >
             Kisah Kasih Kami
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-12 max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 md:mb-12 max-w-lg mx-auto leading-relaxed">
             Dan dari segala hal yang mempertemukan kami, kami percaya bahwa takdir telah menuliskan cerita yang tak mungkin tertukar.
           </p>
         </AnimateOnScroll>
 
         {/* Timeline */}
-        <div className="relative max-w-md mx-auto">
+        <div className="relative max-w-md md:max-w-3xl mx-auto">
           {/* Vertical line */}
           <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-terracotta/20 via-terracotta/40 to-terracotta/20 md:transform md:-translate-x-1/2" />
 
@@ -61,7 +61,7 @@ export default function LoveStorySection() {
               key={milestone.year}
               animation={index % 2 === 0 ? "slideRight" : "slideLeft"}
               delay={index * 0.15}
-              className={`relative flex items-start gap-4 mb-10 last:mb-0 ${
+              className={`relative flex items-start gap-4 mb-6 md:mb-10 last:mb-0 ${
                 /* On desktop, alternate left/right */
                 ""
               }`}
@@ -103,7 +103,7 @@ export default function LoveStorySection() {
           </AnimateOnScroll>
         </div>
 
-        <SectionDivider className="mt-12" />
+        <SectionDivider className="mt-8 md:mt-12" />
       </div>
     </section>
   );

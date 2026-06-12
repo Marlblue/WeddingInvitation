@@ -5,7 +5,7 @@ import SectionDivider from "./ui/SectionDivider";
 
 export default function AyatSection() {
   return (
-    <section id="ayat" className="bg-transparent py-16 md:py-20">
+    <section id="ayat" className="bg-transparent py-10 md:py-20">
       <div className="section-container text-center">
         <AnimateOnScroll animation="fadeIn">
           <SectionDivider variant="floral" />
@@ -13,7 +13,7 @@ export default function AyatSection() {
 
         <AnimateOnScroll animation="slideUp" delay={0.1}>
           <p
-            className="text-charcoal/80 text-xs tracking-[0.2em] uppercase font-sans mb-8"
+            className="text-charcoal/80 text-xs tracking-[0.2em] uppercase font-sans mb-6"
           >
             Bismillahirrahmanirrahim
           </p>
@@ -22,7 +22,7 @@ export default function AyatSection() {
         <AnimateOnScroll animation="scaleIn" delay={0.2}>
           <div className="max-w-lg mx-auto mb-8">
             <p
-              className="text-2xl md:text-3xl leading-relaxed mb-6 text-charcoal/80"
+              className="text-xl sm:text-2xl md:text-3xl leading-relaxed md:leading-relaxed mb-6 text-charcoal/80"
               style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
               dir="rtl"
               lang="ar"

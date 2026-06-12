@@ -5,7 +5,7 @@ import SectionDivider from "./ui/SectionDivider";
 
 export default function FooterSection() {
   return (
-    <footer id="footer" className="bg-charcoal text-cream py-20 md:py-32 relative overflow-hidden">
+    <footer id="footer" className="bg-charcoal text-cream py-16 pb-24 md:py-32 md:pb-32 relative overflow-hidden">
       {/* Decorative top border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-terracotta to-transparent opacity-50" />
 
@@ -29,7 +29,7 @@ export default function FooterSection() {
           </p>
 
           <h2
-            className="text-4xl md:text-5xl text-white mb-16"
+            className="text-4xl md:text-6xl text-white mb-16"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Irwansyah &amp; Lia

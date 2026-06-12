@@ -72,7 +72,7 @@ export default function GiftSection() {
   const [isRevealed, setIsRevealed] = useState(false);
 
   return (
-    <section id="gift" className="bg-transparent py-16 md:py-20">
+    <section id="gift" className="bg-transparent py-10 md:py-20">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
@@ -84,7 +84,7 @@ export default function GiftSection() {
           >
             Wedding Gift
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light leading-relaxed max-w-lg mx-auto mb-12">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light leading-relaxed max-w-lg mx-auto mb-8 md:mb-12">
             Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.
           </p>
         </AnimateOnScroll>
@@ -131,7 +131,7 @@ export default function GiftSection() {
           </div>
         </AnimateOnScroll>
 
-        <SectionDivider className="mt-16" />
+        <SectionDivider className="mt-10 md:mt-16" />
       </div>
     </section>
   );

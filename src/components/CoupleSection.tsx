@@ -62,7 +62,7 @@ function Profile({ name, fullName, parentInfo, image, instagram, delay }: Profil
 
 export default function CoupleSection() {
   return (
-    <section id="couple" className="bg-transparent py-16 md:py-20">
+    <section id="couple" className="bg-transparent py-10 md:py-20">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
@@ -71,12 +71,12 @@ export default function CoupleSection() {
           >
             Pasangan Mempelai
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-12 max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 md:mb-12 max-w-lg mx-auto leading-relaxed">
             Maha Suci Allah yang telah menautkan dua hati dalam ikatan suci pernikahan. Mempelai pria dan wanita yang berbahagia:
           </p>
         </AnimateOnScroll>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16">
           {/* Groom */}
           <Profile
             name="Irwansyah"

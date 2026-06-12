@@ -11,9 +11,6 @@ const galleryImages = [
   "/gallery/1.webp",
   "/gallery/2.webp",
   "/gallery/3.webp",
-  "/gallery/4.webp",
-  "/gallery/5.webp",
-  "/gallery/6.webp",
 ];
 
 export default function GallerySection() {
@@ -26,7 +23,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section id="gallery" className="bg-transparent py-16 md:py-20">
+    <section id="gallery" className="bg-transparent py-10 md:py-20">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
@@ -35,13 +32,13 @@ export default function GallerySection() {
           >
             Galeri
           </h2>
-          <p className="text-center text-charcoal/70 text-sm font-sans font-light mb-12">
+          <p className="text-center text-charcoal/70 text-sm font-sans font-light mb-8 md:mb-12">
             Momen bahagia kami
           </p>
         </AnimateOnScroll>
 
         {/* Photo Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="grid grid-cols-3 gap-2 md:gap-4">
           {galleryImages.map((src, index) => (
             <AnimateOnScroll
               key={index}
@@ -78,7 +75,7 @@ export default function GallerySection() {
           ))}
         </div>
 
-        <SectionDivider className="mt-16" />
+        <SectionDivider className="mt-10 md:mt-16" />
       </div>
 
       <Lightbox

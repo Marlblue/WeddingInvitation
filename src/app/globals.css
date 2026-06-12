@@ -172,7 +172,13 @@ body {
 .section-container {
   max-width: 640px;
   margin: 0 auto;
-  padding: 64px 24px;
+  padding: 48px 20px;
+}
+
+@media (min-width: 480px) {
+  .section-container {
+    padding: 56px 24px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -180,6 +186,26 @@ body {
     max-width: 768px;
     padding: 80px 32px;
   }
+}
+
+/* Bottom nav safe area */
+.pb-safe-bottom {
+  padding-bottom: 88px;
+}
+
+/* Custom scrollbar for feed */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--terracotta-light);
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--terracotta);
 }
 
 @media (min-width: 1024px) {

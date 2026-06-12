@@ -69,7 +69,7 @@ function EventCard({ title, date, time, venue, address, mapsUrl, delay }: EventC
 
 export default function EventSection() {
   return (
-    <section id="event" className="bg-transparent py-16 md:py-20">
+    <section id="event" className="bg-transparent py-10 md:py-20">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
@@ -78,7 +78,7 @@ export default function EventSection() {
           >
             Momen Bahagia
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-12 max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 md:mb-12 max-w-lg mx-auto leading-relaxed">
             Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami:
           </p>
         </AnimateOnScroll>
@@ -104,7 +104,7 @@ export default function EventSection() {
           />
         </div>
 
-        <SectionDivider className="mt-12" />
+        <SectionDivider className="mt-8 md:mt-12" />
       </div>
     </section>
   );
