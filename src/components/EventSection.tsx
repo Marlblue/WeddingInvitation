@@ -87,7 +87,7 @@ export default function EventSection() {
           <EventCard
             title="Akad Nikah"
             date="Minggu, 28 Juni 2026"
-            time="08:00 — 21:00 WIB"
+            time="10:00 — Selesai"
             venue="lapangan tower 25 tangerang"
             address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
             mapsUrl="https://maps.app.goo.gl/BB5kc48J6vACuNFs6"
@@ -96,7 +96,7 @@ export default function EventSection() {
           <EventCard
             title="Resepsi"
             date="Minggu, 28 Juni 2026"
-            time="08:00 — 21:00 WIB"
+            time="10:00 — Selesai"
             venue="lapangan tower 25 tangerang"
             address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
             mapsUrl="https://maps.app.goo.gl/BB5kc48J6vACuNFs6"

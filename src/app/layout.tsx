@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     siteName: "The Wedding of Irwansyah & Lia",
     images: [
       {
-        url: "https://irwansyah-lia.vercel.app/images/couple.webp",
+        url: "https://irwansyah-lia.vercel.app/gallery/2.jpeg",
         width: 1200,
-        height: 630,
+        height: 800,
         alt: "The Wedding of Irwansyah & Lia",
       },
     ],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Wedding of Irwansyah & Lia",
     description: "Jumat, 27 Juni 2026",
-    images: ["https://irwansyah-lia.vercel.app/images/2.jpeg"],
+    images: ["https://irwansyah-lia.vercel.app/gallery/2.jpeg"],
   },
   robots: {
     index: true,
