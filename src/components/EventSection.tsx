@@ -17,7 +17,7 @@ interface EventCardProps {
 function EventCard({ title, date, time, venue, address, mapsUrl, delay }: EventCardProps) {
   return (
     <AnimateOnScroll animation="slideUp" delay={delay}>
-      <div className="glass-card p-6 md:p-8 text-center hover:shadow-lg transition-shadow duration-300">
+      <div className="glass-card p-6 text-center hover:shadow-lg transition-shadow duration-300">
         {/* Icon */}
         <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-terracotta/10 flex items-center justify-center">
           <IoCalendarOutline className="text-terracotta text-2xl" />
@@ -25,7 +25,7 @@ function EventCard({ title, date, time, venue, address, mapsUrl, delay }: EventC
 
         {/* Title */}
         <h3
-          className="text-xl md:text-2xl text-charcoal mb-4"
+          className="text-xl text-charcoal mb-4"
           style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
         >
           {title}
@@ -69,21 +69,21 @@ function EventCard({ title, date, time, venue, address, mapsUrl, delay }: EventC
 
 export default function EventSection() {
   return (
-    <section id="event" className="bg-transparent py-10 md:py-20">
+    <section id="event" className="bg-transparent py-10">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
-            className="text-center text-2xl md:text-3xl text-charcoal mb-4"
+            className="text-center text-2xl text-charcoal mb-4"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Momen Bahagia
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 md:mb-12 max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 max-w-lg mx-auto leading-relaxed">
             Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami:
           </p>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 gap-6">
           <EventCard
             title="Akad Nikah"
             date="Minggu, 28 Juni 2026"
@@ -104,7 +104,7 @@ export default function EventSection() {
           />
         </div>
 
-        <SectionDivider className="mt-8 md:mt-12" />
+        <SectionDivider className="mt-8" />
       </div>
     </section>
   );

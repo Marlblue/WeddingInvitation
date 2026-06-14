@@ -5,7 +5,7 @@ import SectionDivider from "./ui/SectionDivider";
 
 export default function FooterSection() {
   return (
-    <footer id="footer" className="bg-charcoal text-cream py-16 pb-24 md:py-32 md:pb-32 relative overflow-hidden">
+    <footer id="footer" className="bg-charcoal text-cream py-16 pb-24 relative overflow-hidden">
       {/* Decorative top border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-terracotta to-transparent opacity-50" />
 
@@ -20,7 +20,7 @@ export default function FooterSection() {
         <AnimateOnScroll animation="slideUp">
           <SectionDivider variant="simple" className="mb-10 opacity-50" />
 
-          <p className="text-cream/90 text-sm md:text-base font-sans font-light leading-relaxed mb-12 italic">
+          <p className="text-cream/90 text-sm font-sans font-light leading-relaxed mb-12 italic">
             "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami. Atas kehadiran dan doa restunya, kami ucapkan terima kasih."
           </p>
 
@@ -29,7 +29,7 @@ export default function FooterSection() {
           </p>
 
           <h2
-            className="text-4xl md:text-6xl text-white mb-16 drop-shadow-md"
+            className="text-4xl text-white mb-16 drop-shadow-md"
             style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
             Irwansyah &amp; Aulia

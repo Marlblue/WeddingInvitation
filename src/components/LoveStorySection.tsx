@@ -33,45 +33,45 @@ const milestones = [
 
 export default function LoveStorySection() {
   return (
-    <section id="love-story" className="bg-transparent py-10 md:py-20">
+    <section id="love-story" className="bg-transparent py-10">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
-            className="text-center text-2xl md:text-3xl text-charcoal mb-4"
+            className="text-center text-2xl text-charcoal mb-4"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Kisah Kasih Kami
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 md:mb-12 max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 max-w-lg mx-auto leading-relaxed">
             Dan dari segala hal yang mempertemukan kami, kami percaya bahwa takdir telah menuliskan cerita yang tak mungkin tertukar.
           </p>
         </AnimateOnScroll>
 
         {/* Timeline */}
-        <div className="relative max-w-md md:max-w-3xl mx-auto">
+        <div className="relative max-w-md mx-auto">
           {/* Vertical line */}
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-terracotta/20 via-terracotta/40 to-terracotta/20 md:transform md:-translate-x-1/2" />
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-terracotta/20 via-terracotta/40 to-terracotta/20" />
 
           {milestones.map((milestone, index) => (
             <AnimateOnScroll
               key={index}
               animation={index % 2 === 0 ? "slideRight" : "slideLeft"}
               delay={index * 0.15}
-              className={`relative flex items-start gap-4 mb-6 md:mb-10 last:mb-0 ${
+              className={`relative flex items-start gap-4 mb-6 last:mb-0 ${
                 /* On desktop, alternate left/right */
                 ""
                 }`}
             >
               {/* Timeline dot */}
-              <div className="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-cream border-2 border-terracotta/40 flex items-center justify-center text-lg md:absolute md:left-1/2 md:transform md:-translate-x-1/2 shadow-sm">
+              <div className="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-cream border-2 border-terracotta/40 flex items-center justify-center text-lg shadow-sm">
                 {milestone.icon}
               </div>
 
               {/* Content card */}
               <div
-                className={`glass-card p-5 flex-1 md:w-[calc(50%-40px)] ${index % 2 === 0
-                  ? "md:mr-auto md:ml-0 md:pr-6"
-                  : "md:ml-auto md:mr-0 md:pl-6"
+                className={`glass-card p-5 flex-1 ${index % 2 === 0
+                  ? "md:mr-auto"
+                  : "md:ml-auto"
                   }`}
               >
 
@@ -90,13 +90,13 @@ export default function LoveStorySection() {
 
           {/* End heart */}
           <AnimateOnScroll animation="scaleIn" delay={0.6}>
-            <div className="relative z-10 w-10 h-10 mx-auto mt-4 rounded-full bg-terracotta/10 flex items-center justify-center md:ml-[calc(50%-20px)] border border-terracotta/20">
+            <div className="relative z-10 w-10 h-10 mx-auto mt-4 rounded-full bg-terracotta/10 flex items-center justify-center border border-terracotta/20">
               <IoHeartOutline className="text-terracotta" />
             </div>
           </AnimateOnScroll>
         </div>
 
-        <SectionDivider className="mt-8 md:mt-12" />
+        <SectionDivider className="mt-8" />
       </div>
     </section>
   );

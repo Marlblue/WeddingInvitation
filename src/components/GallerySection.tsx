@@ -23,22 +23,22 @@ export default function GallerySection() {
   };
 
   return (
-    <section id="gallery" className="bg-transparent py-10 md:py-20">
+    <section id="gallery" className="bg-transparent py-10">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
-            className="text-center text-2xl md:text-3xl text-charcoal mb-2"
+            className="text-center text-2xl text-charcoal mb-2"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Galeri
           </h2>
-          <p className="text-center text-charcoal/70 text-sm font-sans font-light mb-8 md:mb-12">
+          <p className="text-center text-charcoal/70 text-sm font-sans font-light mb-8">
             Momen bahagia kami
           </p>
         </AnimateOnScroll>
 
         {/* Photo Grid */}
-        <div className="flex flex-col gap-4 md:gap-8 max-w-sm mx-auto">
+        <div className="flex flex-col gap-4 max-w-sm mx-auto">
           {galleryImages.map((src, index) => (
             <AnimateOnScroll
               key={index}
@@ -75,7 +75,7 @@ export default function GallerySection() {
           ))}
         </div>
 
-        <SectionDivider className="mt-10 md:mt-16" />
+        <SectionDivider className="mt-10" />
       </div>
 
       <Lightbox

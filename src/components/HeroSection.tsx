@@ -37,7 +37,7 @@ export default function HeroSection({ guestName, onOpen }: HeroSectionProps) {
             The Wedding Of
           </p>
           <h1
-            className="text-4xl md:text-5xl mb-4 text-white drop-shadow-lg"
+            className="text-4xl mb-4 text-white drop-shadow-lg"
             style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
             Irwan & Aulia

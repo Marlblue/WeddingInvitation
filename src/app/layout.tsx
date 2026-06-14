@@ -62,8 +62,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${playfair.variable} ${inter.variable} ${greatVibes.variable} overflow-x-hidden`}>
-      <body className="antialiased overflow-x-hidden min-h-screen flex justify-center bg-[#222222]">
-        <div className="w-full max-w-[480px] bg-cream min-h-[100dvh] shadow-2xl relative overflow-x-hidden">
+      <body className="antialiased overflow-x-hidden min-h-screen flex justify-center bg-cream">
+        {/* Beautiful desktop background */}
+        <div className="fixed inset-0 z-[-1] hidden md:block bg-gradient-to-br from-cream via-champagne to-cream">
+          <div className="absolute inset-0 bg-[url('/gallery/2.jpeg')] bg-cover bg-center blur-[12px] opacity-20 scale-105" />
+          <div className="absolute inset-0 bg-terracotta/5 mix-blend-multiply" />
+        </div>
+
+        <div className="w-full max-w-[480px] bg-cream min-h-[100dvh] shadow-[0_0_60px_rgba(0,0,0,0.15)] relative overflow-x-hidden md:border-x border-terracotta/10">
           {children}
         </div>
       </body>

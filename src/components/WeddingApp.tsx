@@ -64,7 +64,7 @@ export default function WeddingApp() {
             key="cover"
             exit={{ y: "-100vh", opacity: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="fixed inset-0 z-50 flex justify-center bg-[#222222]"
+            className="fixed inset-0 z-50 flex justify-center bg-[#1a1a1a]"
           >
             <div className="w-full max-w-[480px] h-[100dvh] relative bg-cream shadow-2xl">
               <HeroSection guestName={guestName} onOpen={handleOpen} />

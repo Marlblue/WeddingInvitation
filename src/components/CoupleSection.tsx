@@ -17,7 +17,7 @@ function Profile({ name, fullName, parentInfo, instagram, delay }: ProfileProps)
     <AnimateOnScroll animation="slideUp" delay={delay} className="flex flex-col items-center text-center">
       {/* Name */}
       <h3
-        className="text-4xl md:text-5xl text-charcoal mb-2"
+        className="text-4xl text-charcoal mb-2"
         style={{ fontFamily: "var(--font-great-vibes), cursive" }}
       >
         {fullName}
@@ -46,21 +46,21 @@ function Profile({ name, fullName, parentInfo, instagram, delay }: ProfileProps)
 
 export default function CoupleSection() {
   return (
-    <section id="couple" className="bg-transparent py-10 md:py-20">
+    <section id="couple" className="bg-transparent py-10">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
-            className="text-center text-2xl md:text-3xl text-charcoal mb-4"
+            className="text-center text-2xl text-charcoal mb-4"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Pasangan Mempelai
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 md:mb-12 max-w-lg mx-auto leading-relaxed">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light mb-8 max-w-lg mx-auto leading-relaxed">
             Maha Suci Allah yang telah menautkan dua hati dalam ikatan suci pernikahan. Mempelai pria dan wanita yang berbahagia:
           </p>
         </AnimateOnScroll>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16">
+        <div className="flex flex-col items-center justify-center gap-6">
           {/* Groom */}
           <Profile
             name="Irwansyah"
@@ -74,7 +74,7 @@ export default function CoupleSection() {
           <AnimateOnScroll animation="scaleIn" delay={0.3}>
             <div className="flex items-center justify-center">
               <span
-                className="text-4xl md:text-5xl text-terracotta/70 italic"
+                className="text-4xl text-terracotta/70 italic"
                 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
               >
                 &amp;

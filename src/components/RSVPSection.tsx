@@ -75,24 +75,24 @@ export default function RSVPSection() {
   };
 
   return (
-    <section id="rsvp" className="bg-transparent py-10 md:py-20">
+    <section id="rsvp" className="bg-transparent py-10">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <h2
-            className="text-center text-2xl md:text-3xl text-charcoal mb-2"
+            className="text-center text-2xl text-charcoal mb-2"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             RSVP & Ucapan
           </h2>
-          <p className="text-center text-charcoal/70 text-sm font-sans font-light mb-8 md:mb-12">
+          <p className="text-center text-charcoal/70 text-sm font-sans font-light mb-8">
             Kehadiran dan doa restu Anda sangat berarti bagi kami
           </p>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+        <div className="grid grid-cols-1 gap-6">
           {/* Form */}
           <AnimateOnScroll animation="slideRight" delay={0.1}>
-            <div className="glass-card p-6 md:p-8">
+            <div className="glass-card p-6">
               <h3 className="text-lg font-sans font-medium text-charcoal mb-6">
                 Konfirmasi Kehadiran
               </h3>
@@ -209,7 +209,7 @@ export default function RSVPSection() {
                 </div>
               </div>
 
-              <div className="glass-card flex-1 p-2 md:p-4 overflow-hidden flex flex-col max-h-[500px] md:max-h-[600px]">
+              <div className="glass-card flex-1 p-2 overflow-hidden flex flex-col max-h-[500px]">
                 {isLoadingFeed ? (
                   <div className="flex-1 flex items-center justify-center">
                     <div className="animate-spin w-8 h-8 border-3 border-terracotta/20 border-t-terracotta rounded-full" />

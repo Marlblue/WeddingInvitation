@@ -33,15 +33,15 @@ interface CountdownBoxProps {
 function CountdownBox({ value, label }: CountdownBoxProps) {
   return (
     <div className="flex flex-col items-center">
-      <div className="glass-card w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 flex items-center justify-center mb-1 md:mb-2 relative overflow-hidden">
+      <div className="glass-card w-14 h-14 flex items-center justify-center mb-1 relative overflow-hidden">
         <span
-          className="text-2xl sm:text-3xl md:text-5xl text-charcoal flip-number font-medium"
+          className="text-2xl text-charcoal flip-number font-medium"
           style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
         >
           {String(value).padStart(2, "0")}
         </span>
       </div>
-      <span className="text-charcoal/70 text-[9px] sm:text-[10px] md:text-xs tracking-[0.1em] md:tracking-[0.15em] uppercase font-sans">
+      <span className="text-charcoal/70 text-[9px] tracking-[0.1em] uppercase font-sans">
         {label}
       </span>
     </div>
@@ -63,7 +63,7 @@ export default function CountdownSection() {
 
   if (!mounted) {
     return (
-      <section id="countdown" className="bg-transparent py-10 md:py-20">
+      <section id="countdown" className="bg-transparent py-10">
         <div className="section-container text-center">
           <div className="h-32" />
         </div>
@@ -72,7 +72,7 @@ export default function CountdownSection() {
   }
 
   return (
-    <section id="countdown" className="bg-transparent py-10 md:py-20 relative overflow-hidden">
+    <section id="countdown" className="bg-transparent py-10 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -84,7 +84,7 @@ export default function CountdownSection() {
       <div className="section-container text-center relative z-10">
         <AnimateOnScroll animation="slideUp">
           <h2
-            className="text-2xl md:text-3xl text-charcoal mb-2"
+            className="text-2xl text-charcoal mb-2"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Menghitung Hari
@@ -96,19 +96,19 @@ export default function CountdownSection() {
 
         <AnimateOnScroll animation="scaleIn" delay={0.2}>
           {timeLeft ? (
-            <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-5">
+            <div className="flex items-center justify-center gap-2">
               <CountdownBox value={timeLeft.days} label="Hari" />
-              <span className="text-terracotta text-xl sm:text-2xl md:text-3xl font-light mt-[-12px] md:mt-[-20px]">:</span>
+              <span className="text-terracotta text-xl font-light mt-[-12px]">:</span>
               <CountdownBox value={timeLeft.hours} label="Jam" />
-              <span className="text-terracotta text-xl sm:text-2xl md:text-3xl font-light mt-[-12px] md:mt-[-20px]">:</span>
+              <span className="text-terracotta text-xl font-light mt-[-12px]">:</span>
               <CountdownBox value={timeLeft.minutes} label="Menit" />
-              <span className="text-terracotta text-xl sm:text-2xl md:text-3xl font-light mt-[-12px] md:mt-[-20px]">:</span>
+              <span className="text-terracotta text-xl font-light mt-[-12px]">:</span>
               <CountdownBox value={timeLeft.seconds} label="Detik" />
             </div>
           ) : (
             <div className="py-8">
               <p
-                className="text-2xl md:text-3xl text-charcoal mb-2"
+                className="text-2xl text-charcoal mb-2"
                 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
               >
                 Hari Bahagia Telah Tiba!

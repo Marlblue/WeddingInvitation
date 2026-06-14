@@ -28,7 +28,7 @@ function BankAccount({ bankName, accountNumber, accountHolder, delay }: BankAcco
 
   return (
     <AnimateOnScroll animation="slideUp" delay={delay}>
-      <div className="glass-card p-6 md:p-8 flex flex-col items-center text-center">
+      <div className="glass-card p-6 flex flex-col items-center text-center">
         {/* Bank Name / Logo Placeholder */}
         <h4 className="text-xl text-charcoal font-bold font-sans tracking-widest mb-4">
           {bankName}
@@ -72,25 +72,25 @@ export default function GiftSection() {
   const [isRevealed, setIsRevealed] = useState(false);
 
   return (
-    <section id="gift" className="bg-transparent py-10 md:py-20">
+    <section id="gift" className="bg-transparent py-10">
       <div className="section-container">
         <AnimateOnScroll animation="slideUp">
           <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-terracotta/10 flex items-center justify-center">
             <IoGiftOutline className="text-terracotta text-3xl" />
           </div>
           <h2
-            className="text-center text-2xl md:text-3xl text-charcoal mb-4"
+            className="text-center text-2xl text-charcoal mb-4"
             style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
           >
             Wedding Gift
           </h2>
-          <p className="text-center text-charcoal/80 text-sm font-sans font-light leading-relaxed max-w-lg mx-auto mb-8 md:mb-12">
+          <p className="text-center text-charcoal/80 text-sm font-sans font-light leading-relaxed max-w-lg mx-auto mb-8">
             Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.
           </p>
         </AnimateOnScroll>
 
         {isRevealed ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
             <BankAccount
               bankName="MANDIRI"
               accountNumber="60013020940"
@@ -139,7 +139,7 @@ export default function GiftSection() {
             </p>
           </div>
         </AnimateOnScroll>
-        <SectionDivider className="mt-10 md:mt-16" />
+        <SectionDivider className="mt-10" />
       </div>
     </section>
   );

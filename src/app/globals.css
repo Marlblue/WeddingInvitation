@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  background: #222222;
+  background: var(--cream);
   color: var(--charcoal);
   font-family: var(--font-sans);
   overflow-x: hidden;
@@ -169,14 +169,20 @@ body {
 
 /* Section styling */
 .section-container {
-  max-width: 100%;
+  max-width: 768px;
   margin: 0 auto;
   padding: 48px 20px;
 }
 
 @media (min-width: 480px) {
   .section-container {
-    padding: 48px 24px;
+    padding: 64px 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    padding: 80px 40px;
   }
 }
 
