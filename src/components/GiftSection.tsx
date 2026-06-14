@@ -47,8 +47,8 @@ function BankAccount({ bankName, accountNumber, accountHolder, delay }: BankAcco
         <button
           onClick={handleCopy}
           className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs tracking-[0.1em] uppercase font-sans transition-all duration-300 ${copied
-              ? "bg-sage text-white border-transparent"
-              : "border border-terracotta/50 text-terracotta hover:bg-terracotta hover:text-white"
+            ? "bg-sage text-white border-transparent"
+            : "border border-terracotta/50 text-terracotta hover:bg-terracotta hover:text-white"
             }`}
         >
           {copied ? (
@@ -92,16 +92,10 @@ export default function GiftSection() {
         {isRevealed ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <BankAccount
-              bankName="BCA"
-              accountNumber="1234567890"
+              bankName="MANDIRI"
+              accountNumber="60013020940"
               accountHolder="Irwansyah"
               delay={0.1}
-            />
-            <BankAccount
-              bankName="MANDIRI"
-              accountNumber="0987654321"
-              accountHolder="Lia"
-              delay={0.2}
             />
           </div>
         ) : (
@@ -123,14 +117,28 @@ export default function GiftSection() {
               Kirim Hadiah Fisik
             </p>
             <p className="text-charcoal/80 text-sm font-sans font-light leading-relaxed mb-2">
-              Penerima: Irwansyah / Lia (0812-3456-7890)
+              Penerima: Irwansyah (0822-2772-4399)
             </p>
             <p className="text-charcoal/80 text-sm font-sans font-light leading-relaxed">
-              [Alamat lengkap pengiriman hadiah, nama jalan, RT/RW, kelurahan, kecamatan, kota, kode pos]
+              Jl. Tanah Rendah RT 013/RW 008 No 28, Kel. Kampung Melayu, Kec Jatinegara, Jakarta Timur, DKI Jakarta, 13320
             </p>
           </div>
         </AnimateOnScroll>
 
+        <AnimateOnScroll animation="fadeIn" delay={0.4} className="mt-10">
+          <div className="glass-card p-6 text-center max-w-xl mx-auto border-dashed border-2">
+            <p className="text-charcoal text-sm font-sans font-medium mb-2">
+              Kirim Hadiah Fisik
+            </p>
+            <p className="text-charcoal/80 text-sm font-sans font-light leading-relaxed mb-2">
+              Penerima: Aulia (0895-2258-9993)
+            </p>
+            <p className="text-charcoal/80 text-sm font-sans font-light leading-relaxed">
+              Jalan haji sapri, gang pintu air 2 RT.06/RW.03 No.18 parung serab, pintu warna hijau, Ciledug, Kota Tangerang, Banten, Indonesia
+
+            </p>
+          </div>
+        </AnimateOnScroll>
         <SectionDivider className="mt-10 md:mt-16" />
       </div>
     </section>

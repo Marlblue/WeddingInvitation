@@ -38,7 +38,7 @@ export default function GallerySection() {
         </AnimateOnScroll>
 
         {/* Photo Grid */}
-        <div className="grid grid-cols-3 gap-2 md:gap-4">
+        <div className="flex flex-col gap-4 md:gap-8 max-w-sm mx-auto">
           {galleryImages.map((src, index) => (
             <AnimateOnScroll
               key={index}

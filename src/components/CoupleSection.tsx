@@ -17,8 +17,8 @@ function Profile({ name, fullName, parentInfo, instagram, delay }: ProfileProps)
     <AnimateOnScroll animation="slideUp" delay={delay} className="flex flex-col items-center text-center">
       {/* Name */}
       <h3
-        className="text-2xl md:text-3xl text-charcoal mb-2"
-        style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
+        className="text-4xl md:text-5xl text-charcoal mb-2"
+        style={{ fontFamily: "var(--font-great-vibes), cursive" }}
       >
         {fullName}
       </h3>
@@ -65,7 +65,7 @@ export default function CoupleSection() {
           <Profile
             name="Irwansyah"
             fullName="Irwansyah"
-            parentInfo="Putra dari Bapak [Nama Ayah] & Ibu [Nama Ibu]"
+            parentInfo="Putra dari Bapak Alm Nana & Ibu Juminah"
             instagram="irwnsyh_005"
             delay={0.1}
           />
@@ -86,7 +86,7 @@ export default function CoupleSection() {
           <Profile
             name="Lia"
             fullName="Lia"
-            parentInfo="Putri dari Bapak [Nama Ayah] & Ibu [Nama Ibu]"
+            parentInfo="Putri dari Bapak Sumarno & Ibu Sri Widodo Lestari"
             instagram="liafrhny28"
             delay={0.2}
           />

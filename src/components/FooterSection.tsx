@@ -10,7 +10,7 @@ export default function FooterSection() {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-terracotta to-transparent opacity-50" />
 
       {/* Background image overlay */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.15] bg-cover bg-center"
         style={{ backgroundImage: "url('/images/couple.webp')" }}
       />
@@ -19,7 +19,7 @@ export default function FooterSection() {
       <div className="section-container relative z-10 text-center max-w-2xl">
         <AnimateOnScroll animation="slideUp">
           <SectionDivider variant="simple" className="mb-10 opacity-50" />
-          
+
           <p className="text-cream/90 text-sm md:text-base font-sans font-light leading-relaxed mb-12 italic">
             "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami. Atas kehadiran dan doa restunya, kami ucapkan terima kasih."
           </p>
@@ -29,12 +29,12 @@ export default function FooterSection() {
           </p>
 
           <h2
-            className="text-4xl md:text-6xl text-white mb-16"
-            style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
+            className="text-4xl md:text-6xl text-white mb-16 drop-shadow-md"
+            style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
-            Irwansyah &amp; Lia
+            Irwansyah &amp; Aulia
           </h2>
-          
+
           <SectionDivider variant="simple" className="mt-10 opacity-50" />
         </AnimateOnScroll>
 

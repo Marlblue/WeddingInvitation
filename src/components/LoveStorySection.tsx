@@ -6,28 +6,24 @@ import { IoHeartOutline } from "react-icons/io5";
 
 const milestones = [
   {
-    year: "2020",
     title: "Awal Bertemu",
     description:
       "Pertemuan pertama yang tak terduga menjadi awal dari kisah indah kami. Takdir mempertemukan kami di saat yang tepat.",
     icon: "✨",
   },
   {
-    year: "2022",
     title: "Komitmen",
     description:
       "Setelah mengenal lebih dalam, kami memantapkan hati untuk menjalani hari-hari bersama dengan penuh kasih sayang.",
     icon: "💕",
   },
   {
-    year: "2025",
     title: "Lamaran",
     description:
       "Dengan restu keluarga, kami melangkah ke jenjang yang lebih serius. Sebuah janji untuk masa depan bersama.",
     icon: "💍",
   },
   {
-    year: "2026",
     title: "Menuju Pelaminan",
     description:
       "Alhamdulillah, kami siap melangkah ke pelaminan dan memulai babak baru kehidupan bersama dalam ikatan suci.",
@@ -58,13 +54,13 @@ export default function LoveStorySection() {
 
           {milestones.map((milestone, index) => (
             <AnimateOnScroll
-              key={milestone.year}
+              key={index}
               animation={index % 2 === 0 ? "slideRight" : "slideLeft"}
               delay={index * 0.15}
               className={`relative flex items-start gap-4 mb-6 md:mb-10 last:mb-0 ${
                 /* On desktop, alternate left/right */
                 ""
-              }`}
+                }`}
             >
               {/* Timeline dot */}
               <div className="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-cream border-2 border-terracotta/40 flex items-center justify-center text-lg md:absolute md:left-1/2 md:transform md:-translate-x-1/2 shadow-sm">
@@ -73,15 +69,12 @@ export default function LoveStorySection() {
 
               {/* Content card */}
               <div
-                className={`glass-card p-5 flex-1 md:w-[calc(50%-40px)] ${
-                  index % 2 === 0
-                    ? "md:mr-auto md:ml-0 md:pr-6"
-                    : "md:ml-auto md:mr-0 md:pl-6"
-                }`}
+                className={`glass-card p-5 flex-1 md:w-[calc(50%-40px)] ${index % 2 === 0
+                  ? "md:mr-auto md:ml-0 md:pr-6"
+                  : "md:ml-auto md:mr-0 md:pl-6"
+                  }`}
               >
-                <span className="text-terracotta text-xs tracking-[0.2em] uppercase font-sans font-medium">
-                  {milestone.year}
-                </span>
+
                 <h4
                   className="text-lg text-charcoal mt-1 mb-2"
                   style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}

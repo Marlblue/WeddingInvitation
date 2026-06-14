@@ -11,7 +11,7 @@ interface TimeLeft {
 }
 
 function calculateTimeLeft(): TimeLeft | null {
-  const target = new Date("2026-06-27T08:00:00+07:00").getTime();
+  const target = new Date("2026-06-28T08:00:00+07:00").getTime();
   const now = new Date().getTime();
   const diff = target - now;
 
@@ -90,7 +90,7 @@ export default function CountdownSection() {
             Menghitung Hari
           </h2>
           <p className="text-charcoal/70 text-sm font-sans font-light mb-10">
-            Jumat, 27 Juni 2026
+            Minggu, 28 Juni 2026
           </p>
         </AnimateOnScroll>
 

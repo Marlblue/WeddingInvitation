@@ -86,20 +86,20 @@ export default function EventSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <EventCard
             title="Akad Nikah"
-            date="Jumat, 27 Juni 2026"
-            time="08:00 — 10:00 WIB"
-            venue="[Nama Venue Akad]"
-            address="[Alamat lengkap venue akad nikah]"
-            mapsUrl="https://maps.google.com/?q=-6.200000,106.845599"
+            date="Jumat, 28 Juni 2026"
+            time="08:00 — 21:00 WIB"
+            venue="lapangan tower 25 tangerang"
+            address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
+            mapsUrl="https://maps.app.goo.gl/BB5kc48J6vACuNFs6"
             delay={0.1}
           />
           <EventCard
             title="Resepsi"
-            date="Jumat, 27 Juni 2026"
-            time="11:00 — 14:00 WIB"
-            venue="[Nama Venue Resepsi]"
-            address="[Alamat lengkap venue resepsi]"
-            mapsUrl="https://maps.google.com/?q=-6.200000,106.845599"
+            date="Jumat, 28 Juni 2026"
+            time="08:00 — 21:00 WIB"
+            venue="lapangan tower 25 tangerang"
+            address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
+            mapsUrl="https://maps.app.goo.gl/BB5kc48J6vACuNFs6"
             delay={0.2}
           />
         </div>
