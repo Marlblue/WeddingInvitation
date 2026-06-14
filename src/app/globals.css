@@ -33,11 +33,10 @@ html {
 }
 
 body {
-  background: var(--cream);
+  background: #222222;
   color: var(--charcoal);
   font-family: var(--font-sans);
   overflow-x: hidden;
-  /* removed width and max-width to fix horizontal scroll on mobile */
 }
 
 /* Custom Scrollbar */
@@ -170,21 +169,14 @@ body {
 
 /* Section styling */
 .section-container {
-  max-width: 640px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 48px 20px;
 }
 
 @media (min-width: 480px) {
   .section-container {
-    padding: 56px 24px;
-  }
-}
-
-@media (min-width: 768px) {
-  .section-container {
-    max-width: 768px;
-    padding: 80px 32px;
+    padding: 48px 24px;
   }
 }
 
@@ -208,11 +200,7 @@ body {
   background: var(--terracotta);
 }
 
-@media (min-width: 1024px) {
-  .section-container {
-    max-width: 900px;
-  }
-}
+
 
 /* Flip clock numbers */
 .flip-number {

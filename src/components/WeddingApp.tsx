@@ -64,9 +64,11 @@ export default function WeddingApp() {
             key="cover"
             exit={{ y: "-100vh", opacity: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="fixed inset-0 z-50"
+            className="fixed inset-0 z-50 flex justify-center bg-[#222222]"
           >
-            <HeroSection guestName={guestName} onOpen={handleOpen} />
+            <div className="w-full max-w-[480px] h-[100dvh] relative bg-cream shadow-2xl">
+              <HeroSection guestName={guestName} onOpen={handleOpen} />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -101,10 +103,12 @@ export default function WeddingApp() {
       {/* Floating Music Player & Bottom Nav */}
       <AnimatePresence>
         {isOpen && (
-          <>
-            <MusicPlayer isPlaying={isPlaying} onToggle={toggleMusic} />
-            <BottomNav />
-          </>
+          <div className="fixed inset-0 z-50 pointer-events-none flex justify-center">
+            <div className="w-full max-w-[480px] h-full relative pointer-events-none">
+              <MusicPlayer isPlaying={isPlaying} onToggle={toggleMusic} />
+              <BottomNav />
+            </div>
+          </div>
         )}
       </AnimatePresence>
     </main>

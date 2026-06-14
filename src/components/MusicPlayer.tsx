@@ -52,7 +52,7 @@ export default function MusicPlayer({ isPlaying, onToggle }: MusicPlayerProps) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
       onClick={onToggle}
-      className={`fixed bottom-20 right-4 md:bottom-24 md:right-6 z-50 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg transition-colors border ${
+      className={`absolute bottom-20 right-4 md:bottom-24 md:right-6 z-50 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg transition-colors border pointer-events-auto ${
         isPlaying
           ? "bg-terracotta text-white border-terracotta shadow-terracotta/30"
           : "bg-white/80 text-charcoal border-white/40 backdrop-blur-sm"

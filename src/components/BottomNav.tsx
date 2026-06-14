@@ -58,7 +58,7 @@ export default function BottomNav() {
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 260, damping: 20, delay: 1 }}
-      className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-sm md:max-w-md lg:max-w-lg bg-white/90 backdrop-blur-md border border-terracotta/20 shadow-xl rounded-full px-1.5 py-1.5 md:px-6 md:py-3 flex justify-between items-center"
+      className="absolute bottom-3 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-sm md:max-w-md lg:max-w-lg bg-white/90 backdrop-blur-md border border-terracotta/20 shadow-xl rounded-full px-1.5 py-1.5 md:px-6 md:py-3 flex justify-between items-center pointer-events-auto"
     >
       {navItems.map((item) => {
         const isActive = active === item.id;

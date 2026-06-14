@@ -62,7 +62,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${playfair.variable} ${inter.variable} ${greatVibes.variable} overflow-x-hidden`}>
-      <body className="antialiased overflow-x-hidden max-w-full">{children}</body>
+      <body className="antialiased overflow-x-hidden min-h-screen flex justify-center bg-[#222222]">
+        <div className="w-full max-w-[480px] bg-cream min-h-[100dvh] shadow-2xl relative overflow-x-hidden">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
