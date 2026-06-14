@@ -32,11 +32,22 @@ export const metadata: Metadata = {
     description: "Jumat, 27 Juni 2026",
     type: "website",
     locale: "id_ID",
+    url: "https://irwansyah-lia.vercel.app/",
+    siteName: "The Wedding of Irwansyah & Lia",
+    images: [
+      {
+        url: "https://irwansyah-lia.vercel.app/images/couple.webp",
+        width: 1200,
+        height: 630,
+        alt: "The Wedding of Irwansyah & Lia",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Wedding of Irwansyah & Lia",
     description: "Jumat, 27 Juni 2026",
+    images: ["https://irwansyah-lia.vercel.app/images/2.jpeg"],
   },
   robots: {
     index: true,
