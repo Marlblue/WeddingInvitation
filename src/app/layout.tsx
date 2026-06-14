@@ -24,12 +24,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Wedding of Irwansyah & Lia — 27 Juni 2026",
+  title: "The Wedding of Irwansyah & Lia — 28 Juni 2026",
   description:
-    "Kami mengundang Anda untuk merayakan hari bahagia pernikahan Irwansyah & Lia pada Jumat, 27 Juni 2026.",
+    "Kami mengundang Anda untuk merayakan hari bahagia pernikahan Irwansyah & Lia pada Minggu, 28 Juni 2026.",
   openGraph: {
     title: "The Wedding of Irwansyah & Lia",
-    description: "Jumat, 27 Juni 2026",
+    description: "Minggu, 28 Juni 2026",
     type: "website",
     locale: "id_ID",
     url: "https://irwansyah-lia.vercel.app/",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Wedding of Irwansyah & Lia",
-    description: "Jumat, 27 Juni 2026",
+    description: "Minggu, 28 Juni 2026",
     images: ["https://irwansyah-lia.vercel.app/gallery/2.jpeg"],
   },
   robots: {
