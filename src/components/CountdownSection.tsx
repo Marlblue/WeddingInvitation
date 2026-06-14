@@ -11,7 +11,7 @@ interface TimeLeft {
 }
 
 function calculateTimeLeft(): TimeLeft | null {
-  const target = new Date("2026-06-28T08:00:00+07:00").getTime();
+  const target = new Date("2026-06-28T10:00:00+07:00").getTime();
   const now = new Date().getTime();
   const diff = target - now;
 
