@@ -89,7 +89,7 @@ export default function EventSection() {
             date="Minggu, 28 Juni 2026"
             time="10:00 — Selesai"
             venue="lapangan tower 25 tangerang"
-            address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
+            address="Jl Pintu air, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
             mapsUrl="https://maps.app.goo.gl/BB5kc48J6vACuNFs6"
             delay={0.1}
           />
@@ -98,7 +98,7 @@ export default function EventSection() {
             date="Minggu, 28 Juni 2026"
             time="10:00 — Selesai"
             venue="lapangan tower 25 tangerang"
-            address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
+            address="Jl Pintu air, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
             mapsUrl="https://maps.app.goo.gl/BB5kc48J6vACuNFs6"
             delay={0.2}
           />
