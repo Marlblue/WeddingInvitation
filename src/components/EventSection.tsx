@@ -86,7 +86,7 @@ export default function EventSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <EventCard
             title="Akad Nikah"
-            date="Jumat, 28 Juni 2026"
+            date="Minggu, 28 Juni 2026"
             time="08:00 — 21:00 WIB"
             venue="lapangan tower 25 tangerang"
             address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"
@@ -95,7 +95,7 @@ export default function EventSection() {
           />
           <EventCard
             title="Resepsi"
-            date="Jumat, 28 Juni 2026"
+            date="Minggu, 28 Juni 2026"
             time="08:00 — 21:00 WIB"
             venue="lapangan tower 25 tangerang"
             address="Tangerang, RT.002/RW.003, Parung Serab, Kec. Ciledug, Kota Tangerang, Banten 15153"

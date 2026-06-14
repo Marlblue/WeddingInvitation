@@ -84,8 +84,8 @@ export default function CoupleSection() {
 
           {/* Bride */}
           <Profile
-            name="Lia"
-            fullName="Lia"
+            name="Aulia"
+            fullName="Aulia"
             parentInfo="Putri dari Bapak Sumarno & Ibu Sri Widodo Lestari"
             instagram="liafrhny28"
             delay={0.2}
