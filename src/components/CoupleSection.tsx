@@ -8,29 +8,13 @@ interface ProfileProps {
   name: string;
   fullName: string;
   parentInfo: string;
-  image: string;
   instagram?: string;
   delay: number;
 }
 
-function Profile({ name, fullName, parentInfo, image, instagram, delay }: ProfileProps) {
+function Profile({ name, fullName, parentInfo, instagram, delay }: ProfileProps) {
   return (
     <AnimateOnScroll animation="slideUp" delay={delay} className="flex flex-col items-center text-center">
-      {/* Photo with arch shape */}
-      <div className="relative mb-6 overflow-hidden">
-        <div className="w-48 h-64 md:w-56 md:h-72 rounded-t-[100px] rounded-b-2xl overflow-hidden shadow-lg border-2 border-white">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        {/* Decorative background shape */}
-        <div className="absolute inset-[-10px] -z-10 rounded-t-[100px] rounded-b-2xl bg-terracotta/5" />
-      </div>
-
       {/* Name */}
       <h3
         className="text-2xl md:text-3xl text-charcoal mb-2"
@@ -82,8 +66,7 @@ export default function CoupleSection() {
             name="Irwansyah"
             fullName="Irwansyah"
             parentInfo="Putra dari Bapak [Nama Ayah] & Ibu [Nama Ibu]"
-            image="/images/groom.webp"
-            instagram="irwansyah"
+            instagram="irwnsyh_005"
             delay={0.1}
           />
 
@@ -104,8 +87,7 @@ export default function CoupleSection() {
             name="Lia"
             fullName="Lia"
             parentInfo="Putri dari Bapak [Nama Ayah] & Ibu [Nama Ibu]"
-            image="/images/bride.webp"
-            instagram="lia"
+            instagram="liafrhny28"
             delay={0.2}
           />
         </div>

@@ -12,20 +12,20 @@ export default function HeroSection({ guestName, onOpen }: HeroSectionProps) {
   return (
     <section className="relative w-full h-[100dvh] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image with Ken Burns effect */}
-      <motion.div 
+      <motion.div
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
         transition={{ duration: 20, ease: "easeOut" }}
         className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2000&auto=format&fit=crop')" }}
+        style={{ backgroundImage: "url('gallery/2.jpeg')" }}
       />
-      
+
       {/* Overlay to darken image */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
       {/* Content wrapper */}
       <div className="relative z-10 flex flex-col items-center justify-between w-full h-full p-8 text-center text-white">
-        
+
         {/* Top Text */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -37,10 +37,10 @@ export default function HeroSection({ guestName, onOpen }: HeroSectionProps) {
             The Wedding Of
           </p>
           <h1
-            className="text-5xl md:text-7xl mb-4 text-white"
-            style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif" }}
+            className="text-4xl md:text-5xl mb-4 text-white drop-shadow-lg"
+            style={{ fontFamily: "var(--font-great-vibes), cursive" }}
           >
-            Irwansyah & Lia
+            Irwan & Aulia
           </h1>
         </motion.div>
 
@@ -51,15 +51,12 @@ export default function HeroSection({ guestName, onOpen }: HeroSectionProps) {
           transition={{ duration: 1, delay: 0.6 }}
           className="w-full max-w-sm mb-12 flex flex-col items-center gap-6"
         >
-          <div className="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/30 w-full shadow-lg">
+          <div className="flex flex-col items-center text-center w-full drop-shadow-md">
             <p className="text-xs uppercase tracking-widest text-white/90 mb-2 font-medium">
-              Kepada Yth. Bapak/Ibu/Saudara/i
+              Kepada Yth,
             </p>
             <p className="text-2xl font-bold font-sans text-white">
               {guestName}
-            </p>
-            <p className="text-[10px] text-white/80 mt-3 font-light">
-              *Mohon maaf apabila ada kesalahan penulisan nama/gelar
             </p>
           </div>
 
