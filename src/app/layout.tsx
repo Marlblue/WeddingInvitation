@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Great_Vibes } from "next/font/google";
 import "./globals.css";
+import AutoReload from "@/components/AutoReload";
 
 const greatVibes = Great_Vibes({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
         </div>
 
         <div className="w-full max-w-[480px] bg-cream min-h-[100dvh] shadow-[0_0_60px_rgba(0,0,0,0.15)] relative overflow-x-hidden md:border-x border-terracotta/10">
+          <AutoReload />
           {children}
         </div>
       </body>
