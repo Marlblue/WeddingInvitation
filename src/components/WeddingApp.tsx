@@ -103,7 +103,7 @@ export default function WeddingApp() {
       {/* Floating Music Player & Bottom Nav */}
       <AnimatePresence>
         {isOpen && (
-          <div className="fixed inset-0 z-50 pointer-events-none flex justify-center">
+          <div className="fixed inset-0 z-50 pointer-events-none flex justify-center" style={{ height: '100dvh' }}>
             <div className="w-full max-w-[480px] h-full relative pointer-events-none">
               <MusicPlayer isPlaying={isPlaying} onToggle={toggleMusic} />
               <BottomNav />
